@@ -1,0 +1,27 @@
+/*************************************************************************
+	> File Name: 1.cpp
+	> Author: 
+	> Mail: 
+	> Created Time: 2019年04月12日 星期五 18时42分24秒
+ ************************************************************************/
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+int main() {
+    int year;
+    cin>>year;
+    if (year % 4 != 0) {
+        cout << "No" << endl;
+    }
+    else if (year % 100 != 0) {
+        cout << "Yes" << endl;
+    }
+    else if (year % 400 != 0) {
+        cout << "No" << endl;
+    }
+    else {
+        cout << "Yes" << endl;
+    }
+    return 0;
+}
